@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desagent - The agent that animates your ideas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape square"></div>
+            <div class="shape circle"></div>
+            <div class="shape triangle"></div>
+            <div class="shape square"></div>
+            <div class="shape circle"></div>
+            <div class="shape triangle"></div>
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+            <svg class="heart-icon" width="32" height="32" viewBox="0 0 32 32">
+                <path d="M16 28L4 16C2 14 1 11.1 1 8.2C1 4.6 4 1 8.2 1c2.9 0 5.8 1.1 7.8 3.2L16 4.2l0-0.1C18 2 20.9 1 23.8 1C28 1 31 4.6 31 8.2c0 2.9-1 5.8-3 7.8L16 28z" fill="url(#gradient)"/>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FF6B6B"/>
+                        <stop offset="100%" style="stop-color:#4ECDC4"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span>desagent</span>
+        </div>
+        <div class="nav-links">
+            <a href="#support">Support</a>
+            <a href="#launched">Launched</a>
+            <a href="#learn">Learn</a>
+            <button class="sign-in">Sign in</button>
+            <button class="sign-up">Sign up</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <h1>Idea to design in seconds</h1>
+            <p class="subtitle">Desagent is your superhuman AI design engineer.</p>
+            
+            <div class="animation-showcase">
+                <div class="animation-container">
+                    <div class="thought-bubble">
+                        <span class="typing-text"></span>
+                        <div class="cursor"></div>
+                    </div>
+                    <div class="canvas-container">
+                        <svg class="animation-canvas" viewBox="0 0 800 400">
+                            <!-- Dynamic elements will be added here -->
+                            <defs>
+                                <linearGradient id="shapeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FF6B6B"/>
+                                    <stop offset="100%" style="stop-color:#4ECDC4"/>
+                                </linearGradient>
+                            </defs>
+                            <g class="shapes-group"></g>
+                            <path class="motion-path" fill="none" stroke="none"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="prompt-box">
+                <input type="text" placeholder="Describe your design idea, and I'll bring it to life..." />
+                <div class="action-buttons">
+                    <button class="attach">Attach</button>
+                    <button class="import">Import</button>
+                    <button class="public">Public <span class="info-icon">?</span></button>
+                </div>
+            </div>
+
+            <div class="example-tags">
+                <button class="tag">Brand identity ↑</button>
+                <button class="tag">UI animation ↑</button>
+                <button class="tag">Motion graphics ↑</button>
+                <button class="tag">Design system ↑</button>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <section class="testimonials-section">
+            <h2>Loved by Design Innovators</h2>
+            <p class="testimonials-description">Join thousands of designers who are already creating amazing animations with our tool.</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"This AI tool revolutionized my design workflow. The animations it creates are not just beautiful, they tell a story. It's like having a motion design expert right at your fingertips."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Sarah Chen</div>
+                            <div class="author-title">Creative Director - DesignFlow</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"The way it understands design principles and translates them into fluid animations is mind-blowing. I've cut my animation production time in half."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Marcus Rodriguez</div>
+                            <div class="author-title">UI/UX Lead - InnovatAR</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"Finally, an AI that speaks the language of design! The animations it creates match the emotional impact I want in my designs."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Emma Watson</div>
+                            <div class="author-title">Independent Design Consultant</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="transform-showcase-section" id="transform-showcase">
+            <h2>Watch designs come to life</h2>
+            <p class="showcase-description">Experience the power of AI-driven animations</p>
+            <div class="transform-container">
+                <div class="transform-grid"></div>
+            </div>
+        </section>
+
+        <div class="social-proof">
+            <div class="users">
+                <p>Join <span class="counter">140,000+</span> people using Desagent</p>
+                <div class="avatars">
+                    <!-- Avatar circles will be added here -->
+                </div>
+                <div class="rating">
+                    ★★★★★
+                </div>
+            </div>
+            <div class="awards">
+                <span class="award-text">WIRED</span>
+                <p>Hottest startups of 2024</p>
+            </div>
+            <div class="product-rating">
+                <div class="rating-circle">
+                    <span class="rating-number">4.9</span>
+                    <span class="rating-total">/5.0</span>
+                </div>
+                <p>150 reviews</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 
